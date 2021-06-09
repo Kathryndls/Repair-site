@@ -1,1 +1,1 @@
-# Repair-site
+# Site for the store "Gipsolit"
