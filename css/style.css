@@ -286,6 +286,7 @@ a:hover {
   transform: translateY(50%);
 }
 .feedback {
+  position: relative;
   background-size: cover;
 }
 .feedback-prev-btn,
@@ -315,7 +316,7 @@ a:hover {
   border: 2px solid #48bc15;
   font-style: italic;
 }
-.feedback-text::before {
+.feedback::before {
   content: '';
   display: block;
   position: absolute;
@@ -328,38 +329,38 @@ a:hover {
   border-bottom: none;
   border-top-right-radius: 100px;
 }
-.feedback .feedback-slider {
+.feedback-slider {
   box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.11);
   margin-bottom: 50px;
 }
-.feedback .feedback-slider_item {
+.feedback-slider_item {
   padding: 5rem 6rem;
   margin-bottom: 6px;
   background-color: #ffffff;
 }
-.feedback .feedback-slider_item .customer-info {
+.feedback-slider_item .customer-info {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.feedback .feedback-slider_item .customer-info .media {
+.feedback-slider_item .customer-info .media {
   margin-top: 50px;
   margin-right: 10px;
 }
-.feedback .feedback-slider_item .customer-info .media-body {
+.feedback-slider_item .customer-info .media-body {
   margin-top: 50px;
 }
-.feedback .feedback-slider_item .customer-info .media-body .media-customer {
+.feedback-slider_item .customer-info .media-body .media-customer {
   font-size: 13px;
   font-family: 'ProximaNova_Bold', sans-serif;
 }
-.feedback .feedback-slider_item .customer-info .media-body .media-heading {
+.feedback-slider_item .customer-info .media-body .media-heading {
   font-size: 17px;
 }
-.feedback .feedback-slider_item p {
+.feedback-slider_item p {
   font-size: 1rem;
 }
-.feedback .feedback-slider_item-btn {
+.feedback-slider_item-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -368,8 +369,57 @@ a:hover {
   background-color: #48bc15;
   border: none;
 }
-.feedback .feedback-slider_item-btn img {
+.feedback-slider_item-btn img {
   width: 50%;
+}
+.feedback-form-header {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.feedback-form-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.feedback-form .row {
+  margin-top: 10px;
+}
+.feedback-form-input-wrap {
+  position: relative;
+}
+.feedback-form-text-label {
+  display: absolute;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(50%);
+  padding: 0 13px;
+  background-color: #fff;
+}
+.feedback-form-input {
+  width: 260px;
+  height: 50px;
+  text-align: center;
+  padding: 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: -20px;
+}
+.feedback-form-btn {
+  width: 270px;
+  height: 65px;
+  margin-left: 170px;
+}
+.hand {
+  position: absolute;
+  top: 850px;
+  left: 0;
+  bottom: 0;
+  max-width: 350px;
 }
 /* Оформление всплывающих  модальных окон */
 .popup {

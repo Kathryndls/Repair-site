@@ -208,7 +208,6 @@ small {
         line-height: 4rem;
         color: @text;
     }
-
 // Оформление ссекции с преимуществами
 .features {
     &-block {
@@ -255,7 +254,6 @@ border: none;
     }
 
 // Секция с ценами
-
 .price {
     &-header {
         h2 {
@@ -344,6 +342,7 @@ border: none;
 
 // Cекция с отзывами
 .feedback {
+    position: relative;
     background-size: cover;
     &-prev-btn, &-next-btn {
     width: 49px;
@@ -354,7 +353,7 @@ border: none;
     }  
     &-prev-btn {
         left: -50px;
-        background: #ffffff url(../img/feedback/feedback-prev-arrow.png) center no-repeat;
+        background: #ffffff url(../img/feedback/prev.png) center no-repeat;
         border: none;
         z-index: 997;
     }
@@ -370,6 +369,7 @@ border: none;
         padding: 1rem;
         border: 2px solid @icons-color;
         font-style: italic;
+        }
         &::before {
             content: '';
             display: block;
@@ -385,11 +385,12 @@ border: none;
         }
     }
     .feedback-slider {
+        
         box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.11);
         margin-bottom: 50px;
         &_item {
             padding: 5rem 6rem;
-            margin-bottom:  6px;
+            margin-bottom: 6px;
             background-color: @light;
             .customer-info {
                 display: flex;
@@ -425,10 +426,59 @@ border: none;
                     width: 50%;
                 }
             }
-            }
+        }
     }
-    
-}
+    .feedback-form {
+        &-header {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .row {
+            margin-top: 10px;
+        }
+        &-input-wrap {
+            position: relative;
+        }
+        &-text-label {
+            display: absolute;
+            justify-content: center;
+            text-align: center;
+            transform: translateY(50%);
+            padding: 0 13px;
+            background-color: #fff;
+        }
+        &-input {
+            width: 260px;
+            height: 50px;
+            text-align: center;
+            padding: 2rem;
+            border: 2px solid rgba(0, 0, 0, 0.11);
+            border-radius: 8px;
+            margin-left: 10px;
+            margin-right: -20px;
+        }
+        &-btn {
+            width: 270px;
+            height: 65px;
+            margin-left: 170px;
+        }
+    }
+    .hand {
+        position: absolute;
+        top: 850px;
+        left: 0;
+        bottom: 0;
+        max-width: 350px;
+    }
 /* Оформление всплывающих  модальных окон */
 .popup {
     display: none;
