@@ -372,24 +372,26 @@ border: none;
         }
         &::before {
             content: '';
-            display: block;
+            // display: block;
             position: absolute;
             top: -2rem;
             left: 4rem;
-            width: 2rem;
-            height: 2rem;
+            width: 1.9rem;
+            height: 1.8rem;
             background-color: @light;
             border: 2px solid @icons-color;
             border-bottom: none;
             border-top-right-radius: 100px;
+            margin-left: 45rem;
+            margin-top: 33.9rem;
+            z-index: 11;
         }
     }
     .feedback-slider {
-        
         box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.11);
         margin-bottom: 50px;
         &_item {
-            padding: 5rem 6rem;
+            padding: 50px 60px;
             margin-bottom: 6px;
             background-color: @light;
             .customer-info {
@@ -436,6 +438,15 @@ border: none;
             margin-bottom: 50px;
             position: relative;
         }
+        &-text-label {
+            display: absolute;
+            justify-content: center;
+            text-align: center;
+            transform: translateY(50%);
+            padding: 0 13px;
+            background-color: #fff;
+            margin-left: 30px;
+        }
         &-wrapper {
             display: flex;
             justify-content: center;
@@ -448,14 +459,7 @@ border: none;
         &-input-wrap {
             position: relative;
         }
-        &-text-label {
-            display: absolute;
-            justify-content: center;
-            text-align: center;
-            transform: translateY(50%);
-            padding: 0 13px;
-            background-color: #fff;
-        }
+
         &-input {
             width: 260px;
             height: 50px;
@@ -474,10 +478,11 @@ border: none;
     }
     .hand {
         position: absolute;
-        top: 850px;
+        // top: 850px;
         left: 0;
         bottom: 0;
-        max-width: 350px;
+        // не работает
+        max-width: 300px;
     }
 /* Оформление всплывающих  модальных окон */
 .popup {
@@ -575,48 +580,66 @@ border: none;
                 margin-top: 5px;
             }
         }
+   }
+    .feedback::before {
+        content: '';
+        // display: block;
+        position: absolute;
+        top: -2rem;
+        left: 4rem;
+        width: 1.9rem;
+        height: 1.8rem;
+        background-color: @light;
+        border: 2px solid @icons-color;
+        border-bottom: none;
+        border-top-right-radius: 100px;
+        margin-left: 44rem;
+        margin-top: 35.4rem;
+        z-index: 11;
     }
-
-    // .price {
-    //     &-block {
-    //         .img-wrapper {
-    //             margin-top: 2rem;
-    //             margin-bottom: 70px;
-    //         }
-    //     }
-    //     &-tag{
-    //         margin-top: 4px;
-    //         margin-bottom: 3px;
-    //     }
-    //     &-list { 
-    //         margin-top: 5px;
-    //     }
-    // }
+    .media-body {
+        display: block;
+    }
 }
 
 @media (max-width: 1200px) {
+
+    .order-info {
+        display: block;
+        border: 5px solid red;
+        p {
+            margin-bottom: 0;
+        }
+
+    }
     .features-block {
         p {
-            // font-size: 40rem;
             width: 100%;
             margin-bottom: 5rem;
         }
-    // .price {
-    //     &-block {
-    //         .img-wrapper {
-    //             margin-bottom: 3px;
-    //         }
-    //         &-tag {
-    //             margin-top: 5px;
-    //         }
-    //     }
-    // }
-    
     }
     .price-block {
         .img-wrapper {
             margin-bottom: 0;
         }     
+    }
+    .feedback::before {
+        content: '';
+        position: absolute;
+        top: -2rem;
+        left: 4rem;
+        width: 1.9rem;
+        height: 1.8rem;
+        background-color: @light;
+        border: 2px solid @icons-color;
+        border-bottom: none;
+        border-top-right-radius: 100px;
+        margin-left: 35rem;
+        margin-top: 35.4rem;
+        z-index: 11;
+    }
+    .feedback-text {
+        display: block;
     }
 }
 
